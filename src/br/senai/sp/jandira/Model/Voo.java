@@ -1,11 +1,15 @@
 package br.senai.sp.jandira.Model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
-abstract class Voo {
+class Voo {
         int numeroVoo, lotacao;
         String origemVoo, destinoVoo;
         LocalDateTime tempoDoVoo;
+
+        List<Voo> voos = new ArrayList<>();
         public Voo(int numeroVoo, int lotacao, String origem, String destino, LocalDateTime tempo){
                 this.numeroVoo = numeroVoo;
                 this.lotacao = lotacao;
@@ -43,6 +47,9 @@ abstract class Voo {
         }
         public void setTempoDoVoo(LocalDateTime tempoDoVoo) {
                 this.tempoDoVoo = tempoDoVoo;
+        }
+        public void mostrarVoos(List<Voo> voos){
+
         }
 
 
