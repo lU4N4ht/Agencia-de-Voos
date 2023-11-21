@@ -31,17 +31,4 @@ public class Passageiro {
     public long getTelefone() {
         return telefone;
     }
-
-    public void listarPassageiros(){
-        for (Passageiro passageiro: ListPassageiro){
-            System.out.println(passageiro.getNome());
-            System.out.println(passageiro.getCpf());
-            System.out.println(passageiro.getEndereco());
-            System.out.println(passageiro.getRg());
-            System.out.println(passageiro.getTelefone());
-        }
-    }
-    public void adicionarPassageiros(Passageiro passageiro){
-        ListPassageiro.add(passageiro);
-    }
 }
