@@ -1,16 +1,17 @@
 package br.senai.sp.jandira.Model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Passageiro {
-    List<Passageiro> ListPassageiro = new ArrayList<>();
     private String nome, endereco;
     private long cpf, rg, telefone;
 
-    public List<Passageiro> getListPassageiro() {
-        return ListPassageiro;
+    public Passageiro(String nome, String endereco, long cpf, long rg, long telefone) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.telefone = telefone;
     }
+
 
     public String getNome() {
         return nome;
